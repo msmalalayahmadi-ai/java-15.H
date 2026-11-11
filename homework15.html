@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Task Editing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        #task-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #task-list li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        #task-list span {
+            flex: 1;
+        }
+
+        #task-list input {
+            flex: 1;
+            min-width: 0;
+            padding: 8px;
+            font-size: 15px;
+        }
+
+        button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Task List</h1>
+
+    <ul id="task-list">
+        <li data-task-id="1">
+            <span>Learn JavaScript</span>
+            <button type="button" class="edit-btn">Edit</button>
+        </li>
+        <li data-task-id="2">
+            <span>Practice DOM Manipulation</span>
+            <button type="button" class="edit-btn">Edit</button>
+        </li>
+        <li data-task-id="3">
+            <span>Learn Event Delegation</span>
+            <button type="button" class="edit-btn">Edit</button>
+        </li>
+    </ul>
+    <script src="homework15.js"></script>
+
+</body>
+</html>
