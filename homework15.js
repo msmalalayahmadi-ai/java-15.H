@@ -1,3 +1,4 @@
+// Dynamic Task Editting Application 
 const taskList = document.getElementById("task-list");
 
 // Shared handler for click and keydown events
